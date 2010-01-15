@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HighLow!</string>
+    <string name="app_name">High Low</string>
+	<string name="high_choice">Higher</string>
+	<string name="low_choice">Lower</string>
+	<string name="long_streak_label">Long Streak: </string>
+	<string name="cur_streak_label">Current Streak: </string>
+	<string name="cards_left_label">Cards Left</string>
+	<string name="new_game">Start New Game</string>
+</resources>

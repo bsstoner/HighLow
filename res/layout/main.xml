@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp">
+	
+		<ImageView android:id="@+id/app_logo" android:src="@drawable/logo"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+	
+		<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+		
+			<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right">
+			
+				<TextView  
+				android:id="@+id/cur_streak_label"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:text="@string/cur_streak_label"
+			    android:textColor="#fff"
+			    android:layout_marginRight="5dp"
+			   	android:textSize="16dip" 
+			    />
+				<TextView  
+				android:id="@+id/cur_streak"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:textColor="#fff"
+			  	android:textSize="16dip"
+			    />
+			    
+		    </LinearLayout>
+		    
+		    <LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right">
+		    
+		    	<TextView  
+		    	android:id="@+id/long_streak_label"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:text="@string/long_streak_label" 
+			    android:textColor="#fff"
+			    android:layout_marginRight="5dp"
+			    android:textSize="16dip"
+			    />
+		    
+			    <TextView  
+				android:id="@+id/long_streak"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:textColor="#fff"
+			    android:textSize="16dip"
+			    />
+			    
+		    </LinearLayout>
+			
+		</LinearLayout>
+	
+	</LinearLayout>
+
+<TextView  
+	android:id="@+id/result_view"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="32dip"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textColor="#fff"
+/>
+
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="5dip"
+    >
+		<Button 
+		android:id="@+id/low_choice" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="@string/low_choice"
+		android:textSize="16dip"
+		></Button>
+		
+		<ImageView android:id="@+id/card_image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"></ImageView>
+		
+		<Button 
+		android:id="@+id/high_choice" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="@string/high_choice"
+		android:textSize="16dip" 
+		></Button>
+	</LinearLayout>
+	
+	
+	<LinearLayout
+	android:id="@+id/bottom_layout"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center">
+	   
+	    <TextView  
+		android:id="@+id/cards_left"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:textColor="#fff"
+	    android:layout_marginRight="5dp"
+	   	android:textSize="16sp"
+	    />
+	   
+	   	<TextView  
+	   	android:id="@+id/cards_left_label"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:text="@string/cards_left_label" 
+	    android:textColor="#fff"
+	    android:textSize="16sp"
+	    />
+	    
+	   </LinearLayout>
+		
+	<LinearLayout
+	android:id="@+id/bottom_layout"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center">
+	
+		<Button 
+		android:id="@+id/new_game" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="@string/new_game"
+		android:visibility="invisible"
+		></Button>
+	</LinearLayout>
+   
+</LinearLayout>
